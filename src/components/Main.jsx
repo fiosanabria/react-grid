@@ -1,12 +1,31 @@
 import "./styles/Main.css";
-import Columna from "./Columna.jsx";
+import Imagen from "./Imagen";
+import Masonry from "react-masonry-css";
 
 const Main = () => {
-  return <main>
-   <Columna/>
-   <Columna/>
-   
-  </main>;
+  return (
+    <main>
+      <Masonry
+        breakpointCols={5}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
+        <Imagen />
+        <Imagen />
+        <Imagen />
+        <Imagen />
+        <Imagen />
+        <Imagen />
+        <Imagen />
+        <Imagen />
+        <Imagen />
+        <Imagen />
+        <Imagen />
+        <Imagen />
+        <Imagen />
+      </Masonry>
+    </main>
+  );
 };
 
 export default Main;
